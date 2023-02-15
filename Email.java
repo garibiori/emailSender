@@ -2,7 +2,18 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
-
+/**
+*  Email Program.
+*  Recieves information to send to SMTP server and server sends email
+*  Waits for a Welcome message from the server.
+*  Sends the first sentence to the server.
+*  Recieves server responses
+*  Closes the socket and exits.
+*  author: Ori Garibi and Ofek Shoichet
+*  Email:  garibi@chapman.edu and shoichet@chapman.edu
+*  Date:  2/15/2021
+*  version: 3.1
+*/
 public class Email {
     public static void main(String[] argv) throws Exception {
         // Get user input
