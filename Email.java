@@ -105,6 +105,8 @@ public class Email {
     System.out.println("QUIT");
     outToServer.println("QUIT");
 
+    modifiedSentence = inFromServer.readLine();
+    System.out.println("FROM SERVER: " + modifiedSentence);
     
     // Close the socket connection
     clientSocket.close();
