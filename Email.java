@@ -18,6 +18,8 @@ import java.net.Socket;
 public class Email {
   /**
    * 
+   * Main Method
+   * 
    * @param argv
    * 
    * @throws Exception this is an exception
