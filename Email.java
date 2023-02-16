@@ -87,14 +87,14 @@ public class Email {
 
     modifiedSentence = inFromServer.readLine();
     System.out.println("FROM SERVER: " + modifiedSentence);
-    System.out.println("From: "+ sender_name);
-    outToServer.println("From: "+ sender_name);
+    System.out.println("From: " + sender_name);
+    outToServer.println("From: " + sender_name);
 
-    System.out.println("To: "+ receiver_name);
-    outToServer.println("To: "+ receiver_name);
+    System.out.println("To: " + receiver_name);
+    outToServer.println("To: " + receiver_name);
         
-    System.out.println("Subject: "+ subject);
-    outToServer.println("Subject: "+ subject);
+    System.out.println("Subject: " + subject);
+    outToServer.println("Subject: " + subject);
 
     System.out.println(message);
     outToServer.println(message);
