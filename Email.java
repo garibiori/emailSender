@@ -42,9 +42,10 @@ public class Email {
     String userInput = "";
 
     while (!userInput.equals(".")) {
+
       userInput = inFromUser.readLine();
 
-      if (!message.equals("")) {
+      if (!message.equals("") && !userInput.equals(".")) {
         message += "\n";
       }
 
