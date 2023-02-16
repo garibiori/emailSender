@@ -17,7 +17,6 @@ import java.net.Socket;
 
 public class Email {
   /**
-   * Mail method.
    * 
    * @param argv
    * 
