@@ -39,7 +39,6 @@ public class Email {
     
     System.out.print("Message: ");
     String message = "";
-    boolean period = false;
     String userInput = "";
 
     while (!userInput.equals(".")) {
@@ -100,7 +99,7 @@ public class Email {
     System.out.println(message);
     outToServer.println(message);
     outToServer.println(".");
-    
+
     modifiedSentence = inFromServer.readLine();
     System.out.println("FROM SERVER: " + modifiedSentence);
     System.out.println("QUIT");
