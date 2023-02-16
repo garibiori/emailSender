@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 /**
 *  Email Program.
-*  Recieves information to send to SMTP server and server sends email
+*  Recieves information to send to SMTP server and server sends email.
 *  Waits for a Welcome message from the server.
 *  Sends the first sentence to the server.
 *  Recieves server responses
@@ -17,9 +17,10 @@ import java.net.Socket;
 
 public class Email {
   /**
-   * Mail method
-   * @param argv
-   * @throws Exception
+   * Mail method.
+   * @param argv terminal parameter
+   * 
+   * @throws Exception this is an exception
    */
   public static void main(String[] argv) throws Exception {
     // Get user input
@@ -43,12 +44,12 @@ public class Email {
     String message = "";
     boolean period = false;
     String userInput = "";
-    while(!userInput.equals(".")){
 
+    while(!userInput.equals(".")){
       userInput = inFromUser.readLine();
       message += userInput + "\n";
-
     }
+
     System.out.println("now i am connecting");
     // Finished getting user input
     
@@ -56,7 +57,7 @@ public class Email {
     Socket clientSocket = null;
     
     try {
-    clientSocket = new Socket("smtp.chapman.edu", 25);
+      clientSocket = new Socket("smtp.chapman.edu", 25);
     } catch (Exception e) {
       System.out.println("Failed to open socket connection");
       System.exit(0);
