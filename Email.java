@@ -43,6 +43,11 @@ public class Email {
 
     while (!userInput.equals(".")) {
       userInput = inFromUser.readLine();
+
+      if (!message.equals("")){
+        message += "/n";
+      }
+
       message += userInput;
     }
 
