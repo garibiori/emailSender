@@ -43,7 +43,7 @@ public class Email {
 
     while (!userInput.equals(".")) {
       userInput = inFromUser.readLine();
-      message += userInput + "\n";
+      message += userInput;
     }
 
     System.out.println("now i am connecting");
