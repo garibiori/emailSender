@@ -18,7 +18,7 @@ import java.net.Socket;
 public class Email {
   /**
    * 
-   * <p>Main Method.
+   * Main Method.
    * 
    */
   public static void main(String[] argv) throws Exception {
