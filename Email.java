@@ -44,14 +44,16 @@ public class Email {
     while (!userInput.equals(".")) {
       userInput = inFromUser.readLine();
 
-      if (!message.equals("")){
+      if (!message.equals("")) {
         message += "\n";
       }
 
-      message += userInput;
+      if (!userInput.equals(".")) {
+        message += userInput;
+      }
+
     }
 
-    System.out.println("now i am connecting");
     // Finished getting user input
     
     // Connect to the server
