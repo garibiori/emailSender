@@ -45,7 +45,7 @@ public class Email {
       userInput = inFromUser.readLine();
 
       if (!message.equals("")){
-        message += "/n";
+        message += "\n";
       }
 
       message += userInput;
