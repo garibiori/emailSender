@@ -19,7 +19,7 @@ public class Email {
   /**
    * Mail method.
    * 
-   * @param argv terminal parameter
+   * @param argv
    * 
    * @throws Exception this is an exception
    */
