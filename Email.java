@@ -102,8 +102,8 @@ public class Email {
 
     modifiedSentence = inFromServer.readLine();
     System.out.println("FROM SERVER: " + modifiedSentence);
-    System.out.println("QUIT");
-    outToServer.println("QUIT");
+    System.out.println("QUIT\n");
+    outToServer.println("QUIT\n");
 
     modifiedSentence = inFromServer.readLine();
     System.out.println("FROM SERVER: " + modifiedSentence);
