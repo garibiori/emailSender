@@ -20,9 +20,6 @@ public class Email {
    * 
    * <p>Main Method.
    * 
-   * <p>@param argv
-   * 
-   * @throws Exception this is an exception
    */
   public static void main(String[] argv) throws Exception {
     // Get user input
