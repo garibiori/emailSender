@@ -16,8 +16,13 @@ import java.net.Socket;
 */
 
 public class Email {
+  /**
+   * Mail method
+   * @param argv
+   * @throws Exception
+   */
   public static void main(String[] argv) throws Exception {
-      // Get user input
+    // Get user input
     BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
     System.out.print("Sender email: ");
     final String sender_email_address = inFromUser.readLine();
@@ -39,8 +44,10 @@ public class Email {
     boolean period = false;
     String userInput = "";
     while(!userInput.equals(".")){
+
       userInput = inFromUser.readLine();
-      message+=userInput + "\n";
+      message += userInput + "\n";
+
     }
     System.out.println("now i am connecting");
     // Finished getting user input
@@ -57,11 +64,7 @@ public class Email {
     PrintWriter outToServer = new PrintWriter(clientSocket.getOutputStream(), true);
     BufferedReader inFromServer =  new BufferedReader(
         new InputStreamReader(clientSocket.getInputStream()));
-    
-    // Exchange messages with the server
-    // Recive and display the Welcome Message
-    //String welcomeMessage = inFromServer.readLine();
-    //System.out.println("FROM SERVER:" + welcomeMessage);
+
 
     String modifiedSentence = inFromServer.readLine();
     System.out.println("FROM SERVER: " + modifiedSentence);
@@ -72,13 +75,13 @@ public class Email {
         
     modifiedSentence = inFromServer.readLine();
     System.out.println("FROM SERVER: " + modifiedSentence);
-    System.out.println("MAIL FROM: "+sender_email_address);
-    outToServer.println("MAIL FROM: "+sender_email_address);
+    System.out.println("MAIL FROM: " + sender_email_address);
+    outToServer.println("MAIL FROM: " + sender_email_address);
         
     modifiedSentence = inFromServer.readLine();
     System.out.println("FROM SERVER: " + modifiedSentence);
-    System.out.println("RCPT TO: "+receiver_email_address);
-    outToServer.println("RCPT TO: "+receiver_email_address);
+    System.out.println("RCPT TO: " + receiver_email_address);
+    outToServer.println("RCPT TO: " + receiver_email_address);
 
     modifiedSentence = inFromServer.readLine();
     System.out.println("FROM SERVER: " + modifiedSentence);
