@@ -83,8 +83,8 @@ public class Email {
 
     modifiedSentence = inFromServer.readLine();
     System.out.println("FROM SERVER: " + modifiedSentence);
-    System.out.println("DATA");
-    outToServer.println("DATA");
+    System.out.println("DATA\n");
+    outToServer.println("DATA\n");
 
     modifiedSentence = inFromServer.readLine();
     System.out.println("FROM SERVER: " + modifiedSentence);
