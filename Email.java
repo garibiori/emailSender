@@ -18,6 +18,7 @@ import java.net.Socket;
 public class Email {
   /**
    * Mail method.
+   * 
    * @param argv terminal parameter
    * 
    * @throws Exception this is an exception
@@ -45,7 +46,7 @@ public class Email {
     boolean period = false;
     String userInput = "";
 
-    while(!userInput.equals(".")){
+    while (!userInput.equals(".")) {
       userInput = inFromUser.readLine();
       message += userInput + "\n";
     }
