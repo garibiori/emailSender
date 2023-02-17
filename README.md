@@ -18,7 +18,6 @@ In this program, we wrote code that recieves information from the user to send t
 * Assignment: PA01 Email
 
 ## Source Files
-* java TcpServer
 * java Email
 
 ## References
@@ -31,7 +30,4 @@ No known errors
 javac *.java
 
 ## Execution Instructions
-* java TcpServer
 * java Email
-
-(run in two seperate terminal windows in this exact order)
